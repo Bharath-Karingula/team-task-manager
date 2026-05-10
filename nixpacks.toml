@@ -13,4 +13,4 @@ cmds = [
 ]
 
 [start]
-cmd = "cd server && node src/server.js"
+cmd = "node server/src/server.js"
