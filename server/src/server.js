@@ -74,6 +74,7 @@ app.use(
   })
 );
 
+app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
@@ -144,4 +145,13 @@ connectDB();
 httpServer.listen(PORT, () => {
   console.log(`Server running on http://127.0.0.1:${PORT}`);
   console.log(`Serving frontend from: ${distPath}`);
+
+  // Keep Railway free tier awake — ping every 14 minutes
+  if (process.env.NODE_ENV === "production" && process.env.CLIENT_URL) {
+    setInterval(async () => {
+      try {
+        await fetch(`${process.env.CLIENT_URL}/api/health`);
+      } catch (_) {}
+    }, 14 * 60 * 1000);
+  }
 });
