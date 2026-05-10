@@ -31,7 +31,38 @@
 
 ## Screenshots
 
-> Login page, Dashboard, Projects, Kanban Board — all accessible at the live demo link above.
+### Dashboard
+![Dashboard](screenshots/dashboard-hero.png)
+
+### Analytics Overview
+![Analytics](screenshots/dashboard-analytics.png)
+
+### Project Progress
+![Progress](screenshots/dashboard-progress.png)
+
+### Kanban Task Board
+![Task Board](screenshots/task-board.png)
+
+### Tasks Workflow
+![Tasks](screenshots/tasks.png)
+
+### Projects Page
+![Projects](screenshots/projects.png)
+
+### Project Creation
+![Project Creation](screenshots/project-creation.png)
+
+### Team Management
+![Team](screenshots/teams.png)
+
+### Notifications
+![Notifications](screenshots/notifications.png)
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Settings
+![Settings](screenshots/settings.png)
 
 ## Project Structure
 
