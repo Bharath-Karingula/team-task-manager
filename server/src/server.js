@@ -81,7 +81,7 @@ app.use("/api/demo", demoRoutes);
 
 // ── Serve built frontend ──────────────────────────────────────
 // __dirname = server/src  →  go up 2 levels to project root, then into client/dist
-const distPath = path.join(__dirname, "..", "..", "client", "dist");
+const distPath = path.resolve("client/dist");
 app.use(express.static(distPath));
 
 // All non-API routes return the React app
