@@ -32,7 +32,7 @@
 ## Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard-hero.png)
+![Dashboard](screenshots/dashboard.png)
 
 ### Analytics Overview
 ![Analytics](screenshots/dashboard-analytics.png)
